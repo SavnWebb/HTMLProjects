@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Tell Us How We Did!</h1>
+      <p id="description">Thank you for taking time to help us help you XD</p>
+    </header>
+    <main>
+      <form id="survey-form">
+         <fieldset>
+           <legend>Personal Information</legend>
+           <label>Name (Required):
+               <input 
+                  placeholder="Ex. Captain Pockets"
+                  required
+                  type="text"
+                  name="name"
+                >
+           </label>
+            </br>
+            <label>Email (Required)
+                <input
+                  placeholder="example@email.com"
+                  required
+                  type="email"
+                  name="email"
+                >
+            </label>
+            </br>
+            <label id="number-label" for="number">Age</label>
+            <input
+            placeholder="18"
+            type="number"
+            min="18"
+            max="150"
+            id="number"
+            name="number"
+            >
+         </fieldset>
+         <fieldset>
+           <legend>Rating</legend>
+           <label for="dropdown">Service:</label>
+           <select id="dropdown">
+             <option selected value="excellent">Excellent</option>
+             <option value="awesome">Awesome</option>
+             <option value="satisfactory">Satisfactory</option>
+             <option value="unsure">Unsure</option>
+           </select>
+         </fieldset>
+         <fieldset>
+           <legend>First Time Experience?</legend>
+           <label for="yes-button">Yes</label>
+           <input
+            type="radio"
+            id="yes-button"
+            value="yes-button"
+            name="first-experience"
+           >
+           <label for="no-button">No</label>
+           <input
+            type="radio"
+            id="no-button"
+            value="no-buttton"
+            name="first-experience"
+           >
+         </fieldset>
+         <fieldset>
+           <legend>Services Provided (Check all that apply)</legend>
+           <label for="oral">Take Out</label>
+           <input
+            type="checkbox"
+            name="oral"
+            id="oral"
+            value="oral"
+           >
+           <label for="fingers">Internal Massage</label>
+           <input
+            type="checkbox"
+            name="fingers"
+            id="fingers"
+            value="fingers"
+           >
+           <label for="rounds">Multiple Rounds</label>
+           <input
+            type="checkbox"
+            name="rounds"
+            id="rounds"
+            value="rounds"
+           >
+           <label for="all">All of the above</label>
+           <input
+            type="checkbox"
+            name="all"
+            id="all"
+            value="all"
+           >
+           <input type="hidden" name="easter-egg" value="You're the only checkbox that makes me tick ❤️">
+
+         </fieldset>
+         <fieldset>
+           <legend>Additonal Feedback Is Encouraged</legend>
+           <textarea name="comments" placeholder="Let us have it ;)"></textarea>
+         </fieldset>
+         <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+  <footer>
+    <p>Cheeky Form Ven</p>
+  </footer>
+</html>
